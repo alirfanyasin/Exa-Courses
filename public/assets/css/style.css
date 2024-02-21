@@ -1,0 +1,268 @@
+:root {
+  --color-main: #000d83;
+  --color-second: #f88081;
+  --color-blue: #51c9ff;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-grey: #9d9d9d;
+}
+
+/* Coloring */
+.main-color {
+  color: var(--color-main);
+}
+
+.second-color {
+  color: var(--color-second);
+}
+
+.blue-color {
+  color: var(--color-blue);
+}
+
+.grey-color {
+  color: var(--color-grey);
+}
+
+/* Font Style */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* Custom Component */
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #edf6ff;
+  overflow-x: hidden;
+}
+
+/* Custom Button */
+.btn-main {
+  text-decoration: none;
+  background-color: var(--color-main);
+  color: var(--color-white);
+  border-radius: 10px;
+  font-weight: 300;
+}
+
+.btn-play {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  text-decoration: none;
+  box-shadow: 5px 5px 20px #c5c5c5;
+}
+
+.btn-main.box-shadow {
+  box-shadow: 5px 5px 20px #8e8e8e;
+}
+
+.btn-daftar {
+  background-color: var(--color-white);
+}
+
+/* Banner Style */
+#banner .container {
+  height: 100vh;
+}
+#banner h1 {
+  font-size: 3rem;
+}
+
+#banner p {
+  color: #777777;
+}
+
+#banner .img-banner img {
+  border-radius: 0 100px;
+}
+
+#banner .img-banner .bg-img-banner {
+  width: 80%;
+  height: 90%;
+  background-color: var(--color-blue);
+  position: absolute;
+  right: 20px;
+  bottom: -20px;
+  z-index: -999;
+}
+
+#banner .total-student .p-3 {
+  color: var(--color-white);
+  background-color: var(--color-second);
+}
+
+/* About Style */
+
+#benefit {
+  margin-bottom: 400px;
+}
+#benefit .outer-icon-benefit {
+  width: 90px;
+  height: 90px;
+  background-color: #e0e0e0;
+}
+#benefit .outer-icon-benefit .icon-benefit {
+  background-color: var(--color-main);
+  width: 71px;
+  height: 71px;
+}
+
+#benefit p {
+  font-size: 10pt;
+  color: #979797;
+}
+
+#courses {
+  margin-bottom: 200px;
+}
+
+#courses .container {
+  background-color: var(--color-main);
+}
+
+footer {
+  background-color: var(--color-main);
+}
+
+/* Mobile Version */
+@media only screen and (max-width: 600px) {
+  #banner {
+    text-align: center;
+  }
+  #banner h1 {
+    font-size: 2.1rem;
+  }
+
+  #banner .row .col-md-6 .mt-5 {
+    display: block;
+  }
+
+  #banner .row .col-md-6:nth-child(2) {
+    display: none;
+  }
+
+  #benefit {
+    margin-bottom: 100px;
+  }
+
+  #courses {
+    margin-bottom: 100px;
+  }
+
+  #courses .row .col-md-6:nth-child(2) {
+    display: none;
+  }
+}
