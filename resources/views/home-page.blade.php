@@ -22,308 +22,34 @@
 
 <body>
   <!-- Navbar start -->
-  <livewire:home-page.navigation />
+  <livewire:pages.home-page.navigation />
   <!-- Navbar end -->
 
   <!-- Main start -->
   <main>
     <!-- Section banner start -->
-    <section id="banner">
-      <div class="container d-flex align-items-center">
-        <div class="row d-flex align-items-center">
-          <div class="col-md-6">
-            <span class="fw-semibold blue-color">Don't Stop Learning</span>
-            <h1 class="mb-5 fw-bold main-color">
-              Grow up
-              <span class="second-color">your <span id="typed6">skills</span></span>
-              by <br />
-              online courses with <br />
-              Exa Courses
-            </h1>
-            <p class="lh-lg">
-              Sudahkah kamu merencanakan untuk meningkatkan skill kamu? Ayo
-              maksimalkan potensimu dengan bergabung dalam kursus online kami!
-            </p>
-            <div class="mt-5 d-flex align-items-center">
-              <a href="" class="px-5 py-3 btn-main box-shadow d-inline-block me-5">Get Started</a>
-              <div class="d-flex align-items-center">
-                <a href=""
-                  class="btn-play rounded-circle d-inline-block d-flex align-items-center justify-content-center"><i
-                    class="fa-solid fa-play"></i></a>
-                <span class="main-color fw-semibold ms-3">Watch Video</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="px-5 mx-auto img-banner position-relative">
-              <img src="{{ asset('assets/img/img-3.jpg') }}" alt="IMG BANNER" width="100%" />
-              <div class="bg-img-banner"></div>
-            </div>
-            <div class="p-2 bg-white rounded-4 total-student d-inline-block position-absolute bottom-50">
-              <div class="d-flex align-items-center">
-                <div class="p-3 rounded-3 me-3">
-                  <i class="fa-regular fa-user"></i>
-                </div>
-                <div class="me-4">
-                  <b class="d-block">500+</b>
-                  <div class="grey-color">Acitive Student</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <livewire:pages.home-page.banner />
     <!-- Section banner end -->
 
     <!-- Section sponsor start -->
-    <section id="sponsorship" style="margin-bottom: 100px">
-      <div class="container">
-        <div class="row d-flex justify-content-evenly align-items-center">
-          <div class="col-md-2 col-6" data-aos="zoom-in" data-aos-duration="2000">
-            <img src="{{ asset('assets/img/logo-google.png') }}" alt="" width="100%" />
-          </div>
-          <div class="col-md-2 col-6" data-aos="zoom-in" data-aos-duration="2000">
-            <img src="{{ asset('assets/img/logo-midtrans.png') }}" alt="" width="100%" />
-          </div>
-          <div class="col-md-2 col-6" data-aos="zoom-in" data-aos-duration="2000">
-            <img src="{{ asset('assets/img/logo-gojek.png') }}" alt="" width="100%" />
-          </div>
-          <div class="col-md-2 col-6" data-aos="zoom-in" data-aos-duration="2000">
-            <img src="{{ asset('assets/img/logo-shopeepay.png') }}" alt="" width="100%" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Section sponsor end -->
+    <livewire:pages.home-page.sponsor>
+      <!-- Section sponsor end -->
 
-    <!-- Section about start -->
-    <section id="about" style="margin-bottom: 200px">
-      <div class="container">
-        <div class="row d-flex align-items-center">
-          <div class="mb-4 col-md-6" data-aos="fade-right" data-aos-duration="3000">
-            <img src="{{ asset('assets/img/img-about.png') }}" alt="Img About" width="100%" />
-          </div>
-          <div class="col-md-6" data-aos="fade-left" data-aos-duration="3000">
-            <header class="mb-4">
-              <h2 class="main-color fw-bold">About Us</h2>
-              <div class="second-color fw-medium">
-                What's interesting about us?
-              </div>
-            </header>
+      <!-- Section about start -->
+      <livewire:pages.home-page.about />
+      <!-- Section about end -->
 
-            <p>
-              Kami adalah penyedia kursus online yang berkomitmen untuk
-              membantu Anda memahami dan menguasai dunia yang terus berkembang
-              dari pengembangan web. Di sini, kami percaya bahwa aksesibilitas
-              dan fleksibilitas adalah kunci untuk kesuksesan belajar.
-            </p>
-            <p>
-              Dengan pengajar yang berpengalaman dan kurikulum yang disusun
-              secara cermat, kami memastikan bahwa setiap langkah dalam
-              perjalanan pembelajaran Anda mendukung pencapaian tujuan Anda.
-              Dari pemula hingga tingkat lanjutan, kursus-kursus kami
-              dirancang untuk memberikan pemahaman yang mendalam tentang
-              teknologi web terkini.
-            </p>
-            <p>
-              Siap untuk memulai perjalanan pembelajaran Anda? Ayo bergabung
-              dengan kami di Exa Courses mulai "from zero to hero"
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Section about end -->
+      <!-- Section benefit start -->
+      <livewire:pages.home-page.benefit />
+      <!-- Section benefit end -->
 
-    <!-- Section benefit start -->
-    <section id="benefit">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <header class="mb-4">
-              <h2 class="main-color fw-bold">Benefit</h2>
-              <div class="second-color fw-medium">
-                Benefits of taking the course
-              </div>
-            </header>
-          </div>
-        </div>
-        <div class="row">
-          <div class="mb-3 col-lg-3 col-md-4 col-12" data-aos="fade-up" data-aos-duration="3000">
-            <div class="p-3 border-0 card rounded-4">
-              <div class="text-center card-body">
-                <div class="mt-4 mb-4 d-flex justify-content-center">
-                  <div class="outer-icon-benefit rounded-circle d-flex align-items-center justify-content-center">
-                    <div class="icon-benefit rounded-circle d-flex align-items-center justify-content-center">
-                      <img src="{{ asset('assets/img/icon-sertifikat.png') }}" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <h4 class="mb-3">Sertifikat</h4>
-                <p>
-                  Sertifikat kelulusan hanya bisa di dapatkan ketika
-                  menyelesaikan project besar
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="mb-3 col-lg-3 col-md-4 col-12" data-aos="fade-up" data-aos-duration="3000">
-            <div class="p-3 border-0 card rounded-4">
-              <div class="text-center card-body">
-                <div class="mt-4 mb-4 d-flex justify-content-center">
-                  <div class="outer-icon-benefit rounded-circle d-flex align-items-center justify-content-center">
-                    <div class="icon-benefit rounded-circle d-flex align-items-center justify-content-center">
-                      <img src="{{ asset('assets/img/icon-video.png') }}" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <h4 class="mb-3">Akses Video</h4>
-                <p>
-                  Video hasil recording di setiap pertemuan dapat di akses
-                  selamanya
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="mb-3 col-lg-3 col-md-4 col-12" data-aos="fade-up" data-aos-duration="3000">
-            <div class="p-3 border-0 card rounded-4">
-              <div class="text-center card-body">
-                <div class="mt-4 mb-4 d-flex justify-content-center">
-                  <div class="outer-icon-benefit rounded-circle d-flex align-items-center justify-content-center">
-                    <div class="icon-benefit rounded-circle d-flex align-items-center justify-content-center">
-                      <img src="{{ asset('assets/img/icon-chat.png') }}" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <h4 class="mb-3">Konsultasi Private</h4>
-                <p>
-                  Mentor akan selalu memberikan solusi yang terbaik untuk
-                  kesulitan anda
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="mb-3 col-lg-3 col-md-4 col-12" data-aos="fade-up" data-aos-duration="3000">
-            <div class="p-3 border-0 card rounded-4">
-              <div class="text-center card-body">
-                <div class="mt-4 mb-4 d-flex justify-content-center">
-                  <div class="outer-icon-benefit rounded-circle d-flex align-items-center justify-content-center">
-                    <div class="icon-benefit rounded-circle d-flex align-items-center justify-content-center">
-                      <img src="{{ asset('assets/img/icon-hadiah.png') }}" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <h4 class="mb-3">Hadiah</h4>
-                <p>
-                  Dapatkan hadiah yang menarik di showcase project setelah
-                  project besar
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Section benefit end -->
+      <!-- Section courses description start -->
+      <livewire:pages.home-page.courses>
+        <!-- Section courses description end -->
 
-    <!-- Section courses description start -->
-    <section id="courses">
-      <div class="container p-5 rounded-5 position-relative">
-        <div class="row">
-          <div class="col-md-6" data-aos="fade-right" data-aos-offset="500" data-aos-easing="ease-in-sine">
-            <header class="mb-4">
-              <h2 class="text-white fw-bold">Courses</h2>
-              <div class="second-color fw-medium">Courses description</div>
-            </header>
-
-            <ul>
-              <li class="text-white fw-light">
-                Pelaksanaan dilaksanakan melalui Zoom Meeting.
-              </li>
-              <li class="text-white fw-light">
-                Kursus akan dilaksanakan pada hari Senin, Rabu, Sabtu.
-              </li>
-              <li class="text-white fw-light">
-                Waktu pelaksanaan adalah pukul 19.30 hingga selesai.
-              </li>
-              <li class="text-white fw-light">
-                Kursus berlangsung selama sebulan untuk menguasai frontend
-                developer.
-              </li>
-              <li class="text-white fw-light">
-                Kursus berlangsung selama sebulan untuk menguasai frontend
-                developer.
-              </li>
-              <li class="text-white fw-light">
-                Belajar HTML, CSS dan JavaScript serta (Boostrap atau
-                Tailwind).
-              </li>
-              <li class="text-white fw-light">
-                Harga Terjangkau dengan promo, dari harga
-                <span class="fw-bold">Rp. <s>250.000</s></span> menjadi
-                <span class="fw-bold second-color">Rp. 150.000</span>
-              </li>
-            </ul>
-
-            <div class="mt-5">
-              <a href="https://app.midtrans.com/payment-links/1708427203010"
-                class="px-5 py-3 btn-daftar d-inline-block rounded-3 text-decoration-none main-color fw-semibold">Daftar
-                Sekarang</a>
-            </div>
-          </div>
-          <div class="col-md-6" data-aos="fade-left" data-aos-offset="500" data-aos-easing="ease-in-sine">
-            <div class="bottom-0 position-absolute">
-              <img src="{{ asset('assets/img/img-courses.png') }}" alt="" width="100%" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Section courses description end -->
-
-    <!-- Section contact start -->
-    <section id="contact" style="margin-bottom: 100px" data-aos="fade-up" data-aos-duration="2000">
-      <div class="container">
-        <div class="row">
-          <div class="text-center col">
-            <header class="mb-4">
-              <h2 class="main-color fw-bold">Contact Us</h2>
-              <div class="second-color fw-medium">
-                Ask us about exa courses
-              </div>
-            </header>
-          </div>
-        </div>
-        <div class="row d-flex justify-content-center">
-          <div class="col-md-6">
-            <div class="p-4 border-0 card rounded-5">
-              <div class="card-body">
-                <form>
-                  <div class="mb-3">
-                    <label for="fullname" class="form-label fw-medium main-color">Fullname</label>
-                    <input type="text" class="form-control" id="fullname" />
-                  </div>
-                  <div class="mb-3">
-                    <label for="email" class="form-label fw-medium main-color">Email address</label>
-                    <input type="email" class="form-control" id="email" />
-                  </div>
-                  <div class="mb-3">
-                    <label for="message" class="form-label fw-medium main-color">Message</label>
-                    <textarea class="form-control" id="message" rows="5" placeholder="Write your message here..."></textarea>
-                  </div>
-                  <button type="submit" class="px-5 py-2 btn-main">
-                    <img src="assets/img/icon-send.png" alt="" style="width: 20px" class="me-2" />
-                    Send
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Section contact end -->
+        <!-- Section contact start -->
+        <livewire:pages.home-page.contact />
+        <!-- Section contact end -->
   </main>
   <!-- Main end -->
 
