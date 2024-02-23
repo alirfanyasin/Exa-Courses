@@ -39,15 +39,35 @@ new #[Layout('layouts.guest')] class extends Component {
           <div class="p-4 border-0 shadow card rounded-4">
             <div class="card-body">
               <form wire:submit='login'>
+                <!-- Input Email -->
                 <div class="mb-3">
                   <x-input-label for="email" :value="__('Email Address')" />
                   <x-text-input id="email" type='text' name='email' wire:model='form.email' />
                   <x-input-error :messages="$errors->get('email')" class="mt-2" />
                 </div>
-                <div class="mb-3">
+                <!-- Input Password -->
+                <div class="mb-2">
                   <x-input-label for="password" :value="__('Password')" />
                   <x-text-input id="password" type='password' name='password' wire:model='form.password' />
                   <x-input-error :messages="$errors->get('password')" class="mt-2" />
+                </div>
+                <!-- Remember Me -->
+                <div class="mb-3 d-flex justify-content-between">
+                  <div class="block">
+                    <label for="remember" class="d-flex align-items-center">
+                      <input wire:model="form.remember" id="remember" type="checkbox"
+                        class="rounded-md shadow-sm border-1" name="remember">
+                      <small class="text-sm ms-2 grey-color">{{ __('Remember me') }}</small>
+                    </label>
+                  </div>
+                  <div>
+                    @if (Route::has('password.request'))
+                      <a class="text-sm rounded-md text-decoration-none grey-color"
+                        href="{{ route('password.request') }}" wire:navigate>
+                        <small>{{ __('Forgot your password?') }}</small>
+                      </a>
+                    @endif
+                  </div>
                 </div>
                 <div class="mt-4 mb-3 d-grid">
                   <button type="submit" class="px-3 py-2 btn-main">Sign In</button>
