@@ -61,6 +61,7 @@ new #[Layout('layouts.guest')] class extends Component {
                     </label>
                   </div>
                   <div>
+                    <!-- Forgot Password -->
                     @if (Route::has('password.request'))
                       <a class="text-sm rounded-md text-decoration-none grey-color"
                         href="{{ route('password.request') }}" wire:navigate>
@@ -69,12 +70,15 @@ new #[Layout('layouts.guest')] class extends Component {
                     @endif
                   </div>
                 </div>
+                <!-- Button Login -->
                 <div class="mt-4 mb-3 d-grid">
                   <button type="submit" class="px-3 py-2 btn-main">Sign In</button>
                   <small class="mt-3 text-center">Don't have an account? <a href="{{ route('register') }}" wire:navigate
                       class="main-color text-decoration-none fw-medium">Sign Up</a></small>
                 </div>
               </form>
+
+              <!-- Button Login with Google  -->
               <div class="text-center">
                 <label for="" class="my-4">Or</label>
                 <a href=""

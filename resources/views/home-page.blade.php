@@ -118,8 +118,11 @@
       if (window.scrollY > 100) {
         nav.style.backgroundColor = "#ffffff";
         nav.style.transition = "0.5s";
+        nav.style.boxShadow = "2px 2px 10px #c1c1c1";
       } else {
         nav.style.backgroundColor = "";
+        nav.style.boxShadow = "none";
+
       }
     });
   </script>
