@@ -7,16 +7,21 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav mx-auto">
+      <div class="mx-auto navbar-nav">
         <x-nav-link :active="Request::is('/') ? true : false" href='#'>Home</x-nav-link>
-        <x-nav-link :active="Request::is('#about') ? true : false" href='#about'>About</x-nav-link>
-        <x-nav-link href='#benefit'>Home</x-nav-link>
+        <x-nav-link href='#about'>About</x-nav-link>
+        <x-nav-link href='#benefit'>Benefit</x-nav-link>
         <x-nav-link href='#courses'>Courses</x-nav-link>
         <x-nav-link href='#contact'>Contact</x-nav-link>
       </div>
       <div class="navbar-nav">
-        <a class="nav-link me-3" href="{{ route('login') }}" wire:navigate>Sign In</a>
-        <a class="nav-link btn-main px-3 box-shadow" href="{{ route('register') }}" wire:navigate>Sign Up</a>
+        @auth
+          <a class="px-3 nav-link btn-main box-shadow" href="{{ route('dashboard') }}" wire:navigate>Dashboard</a>
+        @endauth
+        @guest
+          <a class="nav-link me-3" href="{{ route('login') }}" wire:navigate>Sign In</a>
+          <a class="px-3 nav-link btn-main box-shadow" href="{{ route('register') }}" wire:navigate>Sign Up</a>
+        @endguest
       </div>
     </div>
   </div>
