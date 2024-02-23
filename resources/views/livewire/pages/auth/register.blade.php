@@ -48,6 +48,7 @@ new #[Layout('layouts.guest')] class extends Component {
           <div class="p-4 border-0 shadow card rounded-4">
             <div class="card-body">
               <form wire:submit="register">
+                <!-- Input Fullname -->
                 <div class="mb-3">
                   <x-input-label for="fullname" :value="__('Fullname')" />
                   <x-text-input id="fullname" name="name" wire:model='name' />
@@ -55,30 +56,34 @@ new #[Layout('layouts.guest')] class extends Component {
                     <x-input-error :messages="$errors->get('name')" class="mt-2" />
                   @enderror
                 </div>
+                <!-- Input Email -->
                 <div class="mb-3">
                   <x-input-label for="email" :value="__('Email Address')" />
                   <x-text-input id="email" type='email' name="email" wire:model='email' />
                   <x-input-error :messages="$errors->get('email')" class="mt-2" />
                 </div>
+                <!-- Input Password -->
                 <div class="mb-3">
                   <x-input-label for="password" :value="__('Password')" />
                   <x-text-input id="password" type='password' name="password" wire:model='password' />
                   <x-input-error :messages="$errors->get('password')" class="mt-2" />
                 </div>
+                <!-- Input Password Confirmation -->
                 <div class="mb-3">
                   <x-input-label for="password_confirmation" :value="__('Confirm Password')" />
                   <x-text-input id="password_confirmation" type='password' name="password_confirmation"
                     wire:model='password_confirmation' />
                   <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
                 </div>
+                <!-- Button Register -->
                 <div class="mt-4 mb-3 d-grid">
                   <button type="submit" class="px-3 py-2 btn-main">Sign Up</button>
-
                   <small class="mt-3 text-center">Do you have an account? <a href="{{ route('login') }}" wire:navigate
                       class="main-color text-decoration-none fw-medium">Sign In</a></small>
                 </div>
-
               </form>
+
+              <!-- Button Login With Google -->
               <div class="text-center">
                 <label for="" class="my-4">Or</label>
                 <a href=""
@@ -90,7 +95,6 @@ new #[Layout('layouts.guest')] class extends Component {
         </div>
       </div>
     </div>
-
   </main>
   <!-- Main end -->
 </div>

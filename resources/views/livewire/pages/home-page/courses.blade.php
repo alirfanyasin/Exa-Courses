@@ -37,9 +37,12 @@
         </ul>
 
         <div class="mt-5">
-          <a href="https://app.midtrans.com/payment-links/1708427203010"
+          <a href="{{ route('login') }}"
             class="px-5 py-3 btn-daftar d-inline-block rounded-3 text-decoration-none main-color fw-semibold">Daftar
             Sekarang</a>
+          {{-- <a href="https://app.midtrans.com/payment-links/1708427203010"
+            class="px-5 py-3 btn-daftar d-inline-block rounded-3 text-decoration-none main-color fw-semibold">Daftar
+            Sekarang</a> --}}
         </div>
       </div>
       <div class="col-md-6" data-aos="fade-left" data-aos-offset="500" data-aos-easing="ease-in-sine">

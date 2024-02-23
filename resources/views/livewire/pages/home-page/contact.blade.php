@@ -27,7 +27,7 @@
                 <label for="message" class="form-label fw-medium main-color">Message</label>
                 <textarea class="form-control" id="message" rows="5" placeholder="Write your message here..."></textarea>
               </div>
-              <button type="submit" class="px-5 py-2 btn-main">
+              <button type="submit" class="px-5 py-2 border-0 btn-main">
                 <img src="assets/img/icon-send.png" alt="" style="width: 20px" class="me-2" />
                 Send
               </button>
