@@ -106,7 +106,7 @@
 
     // Typed JS
     var typed6 = new Typed("#typed6", {
-      strings: ["Career", "Skills", "Mindset"],
+      strings: ["career", "skills", "mindset"],
       typeSpeed: 80,
       backSpeed: 70,
       loop: true,

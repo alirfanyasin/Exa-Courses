@@ -15,7 +15,8 @@
           maksimalkan potensimu dengan bergabung dalam kursus online kami!
         </p>
         <div class="mt-5 d-flex align-items-center">
-          <a href="{{ route('login') }}" class="px-5 py-3 btn-main box-shadow d-inline-block me-5">Get Started</a>
+          <a href="{{ route('login') }}" wire:navigate class="px-5 py-3 btn-main box-shadow d-inline-block me-5">Get
+            Started</a>
           <div class="d-flex align-items-center">
             <a href=""
               class="btn-play rounded-circle d-inline-block d-flex align-items-center justify-content-center"><i
