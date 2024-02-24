@@ -15,15 +15,11 @@
             Kursus akan dilaksanakan pada hari Senin, Rabu, Sabtu.
           </li>
           <li class="text-white fw-light">
-            Waktu pelaksanaan adalah pukul 19.30 hingga selesai.
+            Waktu pelaksanaan adalah pukul 19.30 sampai 21.00.
           </li>
           <li class="text-white fw-light">
             Kursus berlangsung selama sebulan untuk menguasai frontend
-            developer.
-          </li>
-          <li class="text-white fw-light">
-            Kursus berlangsung selama sebulan untuk menguasai frontend
-            developer.
+            development.
           </li>
           <li class="text-white fw-light">
             Belajar HTML, CSS dan JavaScript serta (Boostrap atau
@@ -36,8 +32,8 @@
           </li>
         </ul>
 
-        <div class="mt-5">
-          <a href="{{ route('login') }}"
+        <div class="mt-3">
+          <a href="{{ route('login') }}" wire:navigate
             class="px-5 py-3 btn-daftar d-inline-block rounded-3 text-decoration-none main-color fw-semibold">Daftar
             Sekarang</a>
           {{-- <a href="https://app.midtrans.com/payment-links/1708427203010"
