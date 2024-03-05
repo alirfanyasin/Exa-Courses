@@ -18,11 +18,11 @@ Route::view('/', 'home-page');
 // Route::view('/about', 'about-page')->name('about');
 
 
-Route::view('dashboard', 'dashboard')
+Route::view('dashboard', 'app.dashboard')
     ->middleware(['auth', 'verified'])
     ->name('dashboard');
 
-Route::view('profile', 'profile')
+Route::view('profile', 'app.profile')
     ->middleware(['auth'])
     ->name('profile');
 
